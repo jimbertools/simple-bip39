@@ -1,0 +1,1 @@
+npm package that implements a few bip39 functions in english.

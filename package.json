@@ -1,0 +1,32 @@
+{
+  "name": "@jimber/simple-bip39",
+  "version": "0.1.0",
+  "description": "npm package that implements a few bip39 functions in english.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:JimberSoftware/simple-bip39.git",
+  "author": "Jimber",
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "dependencies": {
+    "sha256-uint8array": "^0.10.3"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "watch": "tsc --watch",
+    "test": "jest",
+    "prepublish": "yarn build"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
